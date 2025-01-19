@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <p>This is to certify that</p>
       <h3>${studentName}</h3>
       <p>has almost completed the</p>
-      <h3>${courseName}!</h3>
+      <h3>${courseName}</h3>
       <p>with legendary perseverance and world-class bad-assery for never giving up 🏆</p>
       <img src="logo.png" alt="Codespace's Logo" width="650px">
       <p>${personalMessage}</p>
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
-    closeModal.('', function () {
-      
+    closeModal.addEventListener('click', function () {
+      modal.style.display = 'none'
     });
   });
   
